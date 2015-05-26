@@ -14,6 +14,20 @@
 		362FBF491B144BB00016D442 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 362FBF481B144BB00016D442 /* Images.xcassets */; };
 		362FBF4C1B144BB00016D442 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 362FBF4A1B144BB00016D442 /* LaunchScreen.xib */; };
 		362FBF581B144BB00016D442 /* SSZipArchiveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 362FBF571B144BB00016D442 /* SSZipArchiveTests.m */; };
+		362FBF701B144BFF0016D442 /* libSSZipArchiveLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 362FBF651B144BFF0016D442 /* libSSZipArchiveLib.a */; };
+		362FBF7E1B144C800016D442 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 362FBF7D1B144C800016D442 /* SSZipArchive.m */; };
+		362FBF7F1B144C800016D442 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 362FBF7D1B144C800016D442 /* SSZipArchive.m */; };
+		362FBF8A1B144C960016D442 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 362FBF821B144C960016D442 /* ioapi.c */; };
+		362FBF8B1B144C960016D442 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 362FBF821B144C960016D442 /* ioapi.c */; };
+		362FBF8C1B144C960016D442 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 362FBF841B144C960016D442 /* mztools.c */; };
+		362FBF8D1B144C960016D442 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 362FBF841B144C960016D442 /* mztools.c */; };
+		362FBF8E1B144C960016D442 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 362FBF861B144C960016D442 /* unzip.c */; };
+		362FBF8F1B144C960016D442 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 362FBF861B144C960016D442 /* unzip.c */; };
+		362FBF901B144C960016D442 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 362FBF881B144C960016D442 /* zip.c */; };
+		362FBF911B144C960016D442 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 362FBF881B144C960016D442 /* zip.c */; };
+		362FBF961B1452AD0016D442 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 362FBF951B1452AD0016D442 /* libz.dylib */; };
+		362FBF971B1452B30016D442 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 362FBF951B1452AD0016D442 /* libz.dylib */; };
+		362FBF9B1B145C520016D442 /* zipManagerTest.zip in Resources */ = {isa = PBXBuildFile; fileRef = 362FBF9A1B145C520016D442 /* zipManagerTest.zip */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +38,26 @@
 			remoteGlobalIDString = 362FBF371B144BB00016D442;
 			remoteInfo = SSZipArchive;
 		};
+		362FBF711B144BFF0016D442 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 362FBF301B144BB00016D442 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 362FBF641B144BFF0016D442;
+			remoteInfo = SSZipArchiveLib;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		362FBF631B144BFF0016D442 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		362FBF381B144BB00016D442 /* SSZipArchive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSZipArchive.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +73,22 @@
 		362FBF511B144BB00016D442 /* SSZipArchiveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSZipArchiveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		362FBF561B144BB00016D442 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		362FBF571B144BB00016D442 /* SSZipArchiveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSZipArchiveTests.m; sourceTree = "<group>"; };
+		362FBF651B144BFF0016D442 /* libSSZipArchiveLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSSZipArchiveLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		362FBF6F1B144BFF0016D442 /* SSZipArchiveLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSZipArchiveLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		362FBF751B144BFF0016D442 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		362FBF7C1B144C800016D442 /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
+		362FBF7D1B144C800016D442 /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
+		362FBF811B144C960016D442 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		362FBF821B144C960016D442 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		362FBF831B144C960016D442 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		362FBF841B144C960016D442 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		362FBF851B144C960016D442 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		362FBF861B144C960016D442 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		362FBF871B144C960016D442 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		362FBF881B144C960016D442 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		362FBF891B144C960016D442 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		362FBF951B1452AD0016D442 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		362FBF9A1B145C520016D442 /* zipManagerTest.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = zipManagerTest.zip; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				362FBF961B1452AD0016D442 /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,14 +107,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		362FBF621B144BFF0016D442 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				362FBF971B1452B30016D442 /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		362FBF6C1B144BFF0016D442 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				362FBF701B144BFF0016D442 /* libSSZipArchiveLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		362FBF2F1B144BB00016D442 = {
 			isa = PBXGroup;
 			children = (
+				362FBF951B1452AD0016D442 /* libz.dylib */,
+				362FBF921B144CDA0016D442 /* Resource */,
 				362FBF3A1B144BB00016D442 /* SSZipArchive */,
 				362FBF541B144BB00016D442 /* SSZipArchiveTests */,
+				362FBF661B144BFF0016D442 /* SSZipArchiveLib */,
+				362FBF731B144BFF0016D442 /* SSZipArchiveLibTests */,
 				362FBF391B144BB00016D442 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +144,8 @@
 			children = (
 				362FBF381B144BB00016D442 /* SSZipArchive.app */,
 				362FBF511B144BB00016D442 /* SSZipArchiveTests.xctest */,
+				362FBF651B144BFF0016D442 /* libSSZipArchiveLib.a */,
+				362FBF6F1B144BFF0016D442 /* SSZipArchiveLibTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +153,9 @@
 		362FBF3A1B144BB00016D442 /* SSZipArchive */ = {
 			isa = PBXGroup;
 			children = (
+				362FBF801B144C960016D442 /* minizip */,
+				362FBF7C1B144C800016D442 /* SSZipArchive.h */,
+				362FBF7D1B144C800016D442 /* SSZipArchive.m */,
 				362FBF3F1B144BB00016D442 /* AppDelegate.h */,
 				362FBF401B144BB00016D442 /* AppDelegate.m */,
 				362FBF421B144BB00016D442 /* ViewController.h */,
@@ -117,6 +192,53 @@
 				362FBF561B144BB00016D442 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		362FBF661B144BFF0016D442 /* SSZipArchiveLib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SSZipArchiveLib;
+			sourceTree = "<group>";
+		};
+		362FBF731B144BFF0016D442 /* SSZipArchiveLibTests */ = {
+			isa = PBXGroup;
+			children = (
+				362FBF741B144BFF0016D442 /* Supporting Files */,
+			);
+			path = SSZipArchiveLibTests;
+			sourceTree = "<group>";
+		};
+		362FBF741B144BFF0016D442 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				362FBF751B144BFF0016D442 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		362FBF801B144C960016D442 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				362FBF811B144C960016D442 /* crypt.h */,
+				362FBF821B144C960016D442 /* ioapi.c */,
+				362FBF831B144C960016D442 /* ioapi.h */,
+				362FBF841B144C960016D442 /* mztools.c */,
+				362FBF851B144C960016D442 /* mztools.h */,
+				362FBF861B144C960016D442 /* unzip.c */,
+				362FBF871B144C960016D442 /* unzip.h */,
+				362FBF881B144C960016D442 /* zip.c */,
+				362FBF891B144C960016D442 /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		362FBF921B144CDA0016D442 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				362FBF9A1B145C520016D442 /* zipManagerTest.zip */,
+			);
+			name = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +279,41 @@
 			productReference = 362FBF511B144BB00016D442 /* SSZipArchiveTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		362FBF641B144BFF0016D442 /* SSZipArchiveLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 362FBF761B144BFF0016D442 /* Build configuration list for PBXNativeTarget "SSZipArchiveLib" */;
+			buildPhases = (
+				362FBF611B144BFF0016D442 /* Sources */,
+				362FBF621B144BFF0016D442 /* Frameworks */,
+				362FBF631B144BFF0016D442 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SSZipArchiveLib;
+			productName = SSZipArchiveLib;
+			productReference = 362FBF651B144BFF0016D442 /* libSSZipArchiveLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		362FBF6E1B144BFF0016D442 /* SSZipArchiveLibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 362FBF791B144BFF0016D442 /* Build configuration list for PBXNativeTarget "SSZipArchiveLibTests" */;
+			buildPhases = (
+				362FBF6B1B144BFF0016D442 /* Sources */,
+				362FBF6C1B144BFF0016D442 /* Frameworks */,
+				362FBF6D1B144BFF0016D442 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				362FBF721B144BFF0016D442 /* PBXTargetDependency */,
+			);
+			name = SSZipArchiveLibTests;
+			productName = SSZipArchiveLibTests;
+			productReference = 362FBF6F1B144BFF0016D442 /* SSZipArchiveLibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -172,6 +329,12 @@
 					362FBF501B144BB00016D442 = {
 						CreatedOnToolsVersion = 6.3.1;
 						TestTargetID = 362FBF371B144BB00016D442;
+					};
+					362FBF641B144BFF0016D442 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					362FBF6E1B144BFF0016D442 = {
+						CreatedOnToolsVersion = 6.3.1;
 					};
 				};
 			};
@@ -190,6 +353,8 @@
 			targets = (
 				362FBF371B144BB00016D442 /* SSZipArchive */,
 				362FBF501B144BB00016D442 /* SSZipArchiveTests */,
+				362FBF641B144BFF0016D442 /* SSZipArchiveLib */,
+				362FBF6E1B144BFF0016D442 /* SSZipArchiveLibTests */,
 			);
 		};
 /* End PBXProject section */
@@ -200,12 +365,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				362FBF471B144BB00016D442 /* Main.storyboard in Resources */,
+				362FBF9B1B145C520016D442 /* zipManagerTest.zip in Resources */,
 				362FBF4C1B144BB00016D442 /* LaunchScreen.xib in Resources */,
 				362FBF491B144BB00016D442 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		362FBF4F1B144BB00016D442 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		362FBF6D1B144BFF0016D442 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -219,9 +392,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				362FBF7E1B144C800016D442 /* SSZipArchive.m in Sources */,
+				362FBF901B144C960016D442 /* zip.c in Sources */,
+				362FBF8E1B144C960016D442 /* unzip.c in Sources */,
 				362FBF441B144BB00016D442 /* ViewController.m in Sources */,
+				362FBF8C1B144C960016D442 /* mztools.c in Sources */,
 				362FBF411B144BB00016D442 /* AppDelegate.m in Sources */,
 				362FBF3E1B144BB00016D442 /* main.m in Sources */,
+				362FBF8A1B144C960016D442 /* ioapi.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +411,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		362FBF611B144BFF0016D442 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				362FBF8B1B144C960016D442 /* ioapi.c in Sources */,
+				362FBF7F1B144C800016D442 /* SSZipArchive.m in Sources */,
+				362FBF8F1B144C960016D442 /* unzip.c in Sources */,
+				362FBF911B144C960016D442 /* zip.c in Sources */,
+				362FBF8D1B144C960016D442 /* mztools.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		362FBF6B1B144BFF0016D442 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -240,6 +437,11 @@
 			isa = PBXTargetDependency;
 			target = 362FBF371B144BB00016D442 /* SSZipArchive */;
 			targetProxy = 362FBF521B144BB00016D442 /* PBXContainerItemProxy */;
+		};
+		362FBF721B144BFF0016D442 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 362FBF641B144BFF0016D442 /* SSZipArchiveLib */;
+			targetProxy = 362FBF711B144BFF0016D442 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -399,6 +601,58 @@
 			};
 			name = Release;
 		};
+		362FBF771B144BFF0016D442 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		362FBF781B144BFF0016D442 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		362FBF7A1B144BFF0016D442 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SSZipArchiveLibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		362FBF7B1B144BFF0016D442 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SSZipArchiveLibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -424,6 +678,22 @@
 			buildConfigurations = (
 				362FBF5F1B144BB00016D442 /* Debug */,
 				362FBF601B144BB00016D442 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		362FBF761B144BFF0016D442 /* Build configuration list for PBXNativeTarget "SSZipArchiveLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				362FBF771B144BFF0016D442 /* Debug */,
+				362FBF781B144BFF0016D442 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		362FBF791B144BFF0016D442 /* Build configuration list for PBXNativeTarget "SSZipArchiveLibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				362FBF7A1B144BFF0016D442 /* Debug */,
+				362FBF7B1B144BFF0016D442 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
